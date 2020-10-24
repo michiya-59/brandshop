@@ -16,12 +16,13 @@ session_regenerate_id(true);
 
 include('header.php');
 
+// カートの中身を見る機能
 try
 {
 if(isset($_SESSION['cart']) === true)
 {
   $cart = $_SESSION['cart'];
-  $max = count($cart);
+  $max = count($cart); //カートの中身のカウント
 }
 else
 {
@@ -82,6 +83,8 @@ catch(Exception $e)
   exit();
 }
 ?>
+
+<!-- カートの中身を表示している -->
 <main>
 <a href="index.php" class="continue-buy"><p class="continue-p">買い物を続ける</p></a>
 <p class="shopping-cart">ショッピングカート</p>

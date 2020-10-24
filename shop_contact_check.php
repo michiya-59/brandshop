@@ -14,6 +14,7 @@
   <div class="check-form">
 <?php  
 
+// お問い合わせフォームのチェックする機能
 $name = $_POST['name'];
 $tel = $_POST['tel'];
 $mail = $_POST['mail'];

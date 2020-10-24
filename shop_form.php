@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+  <!-- 商品をご購入する前にお客様情報のフォーム -->
 <div class="container">
   <?php include('header.php'); ?>
   <p class="form-p-firts">お客様情報を入力してください</p><br>
@@ -19,7 +20,7 @@
       <input type="text" name="name" style="width:200px" class="form-input"><br>
     </div>
     <div class="form-part">
-      <p class="form-p">メールアドレス(<span style="color:red" class="form-p">Gamilのみ</span>)</p>
+      <p class="form-p">メールアドレス</p>
       <input type="text" name="mail" style="width:200px" class="form-input"><br>
     </div>
     <div class="form-part">

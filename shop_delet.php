@@ -2,11 +2,12 @@
 session_start();
 session_regenerate_id(true);
 
+// カートの中身を削除する機能
 $max = $_POST['max'];
 
 $max = htmlspecialchars($max,ENT_QUOTES,'UTF-8');
 
-$cart = $_SESSION['cart'];
+$cart = $_SESSION['cart']; 
 
 for($i = $max; 0 <= $i; $i--)
 {

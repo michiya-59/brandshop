@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
+<!-- 最初に出てくるトップページ -->
+
 <body>
   <div class="container">
   <?php include('header.php'); ?>
@@ -40,6 +42,8 @@ $stmt->execute();
 
 
 $dbh = null;
+
+// 商品、写真や名前等をデーターベースから読み込みforeach で表示している
 
 print '<main>';
 print '<div class=product-list>';
@@ -89,7 +93,7 @@ catch(Exception $e)
 }
 ?>
 <div class="page-top">
-	<img src="images/page_top.gif" alt="ページトップボタン">
+	<img src="images/page_top.gif" alt="ページトップボタン" class="page-top2">
 </div>
 <?php include('footer.php') ?>
 </div>

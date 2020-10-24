@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
+<!-- カテゴリーのグッチで絞った時のコード -->
+
 <body>
 <div class="container">
   <?php include('header.php'); ?>
@@ -43,6 +45,7 @@ $stmt->execute($data);
 
 $dbh = null;
 
+// 商品、写真や名前等をデーターベースから読み込みforeachで表示している
 print '<main>';
 print '<div class=product-list>';
 for($i = 0; $i < 100; $i++)

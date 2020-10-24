@@ -19,6 +19,7 @@ session_regenerate_id(true);
 
 $code = $_SESSION['member_code'];
 
+// 会員登録している人の情報をデーターベースからもってきている
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
 $password = '8f2c9d49';

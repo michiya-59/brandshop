@@ -8,6 +8,7 @@ if($_COOKIE[session_name()] === true)
 session_destroy();
 ?>
 
+<!-- カートの中身を削除する機能 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -24,6 +24,7 @@ try
 {
 $product_code = $_GET['productcode'];
 
+// 商品の守王歳画面を表示させる機能
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
 $password = '8f2c9d49';
@@ -79,7 +80,7 @@ catch(Exception $e)
 }
 ?>
 
-
+<!-- 画像が4枚時に4枚表示させる処理 -->
 <?php if($product_gazou_name4 === $product_gazou_name4 && $product_gazou_name5 === ''): ?>
   <div id="slide_show" >
     <ul class="slide">
@@ -119,6 +120,7 @@ catch(Exception $e)
   exit(); ?>
 <?php endif ?>
 
+<!-- 画像が5枚時に5枚表示させる処理 -->
 <?php if($product_gazou_name5 === $product_gazou_name5 && $product_gazou_name6 === ''): ?>
   <div class="product-detail-img">
     <p style="width:20%"><?php print $disp_gazou2; ?></p>
@@ -152,6 +154,7 @@ catch(Exception $e)
   exit(); 
 endif ?>
 
+<!-- 画像が6枚時に6枚表示させる処理 -->
 <?php if($product_gazou_name6 === $product_gazou_name6 && $product_gazou_name7 === ''):?>
   <div class="product-detail-img">
     <p style="width:20%"><?php print $disp_gazou2; ?></p>
@@ -186,6 +189,7 @@ endif ?>
   exit(); 
 endif ?>
 
+<!-- 画像が7枚時に7枚表示させる処理 -->
 <?php if($product_gazou_name7 === $product_gazou_name7 && $product_gazou_name8 === ''): ?>
   <p style="width:100%"><?php print $disp_gazou; ?></p>
   <div class="product-detail-img">
@@ -222,6 +226,7 @@ endif ?>
   exit(); 
 endif ?>
 
+<!-- 画像が8枚時に8枚表示させる処理 -->
 <?php if($product_gazou_name8 === $product_gazou_name8): ?>
   <p style="width:100%"><?php print $disp_gazou; ?></p>
   <div class="product-detail-img">

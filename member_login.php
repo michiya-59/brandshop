@@ -37,6 +37,10 @@
   </div>
   <h1 class="title"><a href="index.php" class="home">BEST BRAND</a></h1>
 </header>
+
+<!-- ログイン機能の処理 -->
+
+<!-- ログインしていたら、ログアウトの画面を出し、ログアウトできるようにしている -->
 <?php if(isset($_SESSION['member_login']) === true) : ?>
   <p class="login-p">ログアウト</p>
   <div class="login-form">
@@ -44,15 +48,16 @@
     <a href="member_logout.php" class="logout-a">ログアウトへ</a>
   </div>  
 <?php else : ?>
+  <!-- ログインしていなかったら、ログインと会員登録させる機能の画面 -->
   <div class="login-body">
-    <p class="login-p">会員ログイン</p><br><br>
+    <p class="login-p">会員ログイン</p>
   </div>
   <div class="login-form">
     <form action="member_login_check.php" method="post">
     <p class="mail-p">登録メールアドレス</p><br>
     <input type="text" name="mail" class="mail"><br>
     <p class="pass-p">パスワード</p><br>
-    <input type="password" name="pass" class="pass"><br><br>
+    <input type="password" name="pass" class="pass"><br>
     <input type="submit" value="ログイン" class="login">
     </form>
     <p class="member-p">会員登録は<a href="member_entry.php" style="text-decoration:none">こちら</a></p>

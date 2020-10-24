@@ -22,6 +22,7 @@
   {
   $product_code = $_GET['productcode'];
   
+  // カートの中身に同じ商品が入っていたら、入れさせない処理
   if(isset($_SESSION['cart']) === true)
   {
     $cart = $_SESSION['cart'];
@@ -34,6 +35,7 @@
     }
   }
   
+  // カートに商品を入れる
   $cart[] = $product_code;
   $_SESSION['cart'] = $cart;
   

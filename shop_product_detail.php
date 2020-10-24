@@ -17,6 +17,8 @@
   session_start();
   session_regenerate_id(true);
 
+  //注文詳細画面
+
   $appdate = $_POST['date'];
   $name = $_POST['name'];
 
@@ -57,6 +59,8 @@
       } 
     }
   }
+
+  // お客様が注文してくださった時の全ての情報を条件を名前で表示
   $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
   $user = 'bc9681657abe67'; 
   $password = '8f2c9d49';

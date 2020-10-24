@@ -251,14 +251,14 @@ $password = '8f2c9d49';
 $dbh = new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-// for($i = 0; $i < $max; $i++)
-// {
-//   $sql = 'UPDATE mst_product SET stock=0 WHERE code=? ';
-//   $stmt = $dbh->prepare($sql);
-//   $data = array();
-//   $data[0] = $cart[$i];
-//   $stmt->execute($data);
-// }
+for($i = 0; $i < $max; $i++)
+{
+  $sql = 'UPDATE mst_product SET stock=0 WHERE code=? ';
+  $stmt = $dbh->prepare($sql);
+  $data = array();
+  $data[0] = $cart[$i];
+  $stmt->execute($data);
+}
  
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 

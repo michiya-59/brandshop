@@ -46,8 +46,7 @@
 session_start();
 session_regenerate_id(true);
 
-// try
-// {
+// 商品ご購入完了画面
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $post1 = $_POST['post1'];
@@ -111,9 +110,10 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 $product_name = [];
 $product_price = [];
 
+// ご購入していただいた商品を表示する処理
 for($i = 0; $i < $max; $i++)
 {
-  foreach($cart as $key => $value)
+  foreach($cart as $key => $value)  //forexchで商品情報をデーターベースから取ってくる処理
   {
     $sql = 'SELECT code,name,price,gazou FROM mst_product WHERE code=?';
     $stmt = $dbh->prepare($sql);
@@ -144,7 +144,7 @@ for($i = 0; $i < $max; $i++)
 
 print '<h1 class="buy-product">ご購入されたされた商品</h1>';
 
-
+// データーベースからとってきた情報をfor文で回して表示
 print '<div class="buy-finish">';
 for($i = 0; $i < $max; $i++)
 {
@@ -175,6 +175,7 @@ print '<input type="hidden" name="name" value="'.$name.'">';
 print '</form>';
 
 
+// ご購入時に自動メールで送るための情報をデーターべ―スからとってきている
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
 $password = '8f2c9d49';
@@ -214,6 +215,7 @@ $password = '8f2c9d49';
 $dbh = new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
+// ご購入時に会員登録を同時に行う時にお客様情報をデーターベースに入れる
 $lastmembercode = 0;
 if($chumon === 'chumontouroku')
 {
@@ -286,21 +288,21 @@ for($i = 0; $i < $max; $i++){
   $stmt->execute($data);
 }
 
-
+// 購入時したら、商品をSOLD OUTにするための機能
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
 $password = '8f2c9d49';
 $dbh = new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-// for($i = 0; $i < $max; $i++)
-// {
-//   $sql = 'UPDATE mst_product SET stock=0 WHERE code=? ';
-//   $stmt = $dbh->prepare($sql);
-//   $data = array();
-//   $data[0] = $cart[$i];
-//   $stmt->execute($data);
-// }
+for($i = 0; $i < $max; $i++)
+{
+  $sql = 'UPDATE mst_product SET stock=0 WHERE code=? ';
+  $stmt = $dbh->prepare($sql);
+  $data = array();
+  $data[0] = $cart[$i];
+  $stmt->execute($data);
+}
  
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
@@ -313,7 +315,7 @@ $stmt->execute();
 
 $dbh = null;
 
-
+// 自動メール文の本文
 $honbun .= "送料は無料です\n";
 $honbun .= "------------------------------------------\n";
 $honbun .= "\n";

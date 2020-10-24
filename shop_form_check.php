@@ -14,6 +14,7 @@
   <div class="check-form">
 <?php  
 
+// ご購入していただくお客様情報の確認画面
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $post1 = $_POST['post1'];
@@ -134,6 +135,7 @@ if($name === '' || preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$mail) === 
 }
 else
 {
+  // 注文を完了させるために必要な情報をhiddenで渡す処理
 print '<form action="shop_form_done.php" method="post">';
 print '<input type="hidden" name="name" value="'.$name.'">';
 print '<input type="hidden" name="mail" value="'.$mail.'">';

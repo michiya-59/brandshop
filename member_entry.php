@@ -11,6 +11,8 @@
   <?php 
   session_start();
   session_regenerate_id(true);
+
+  // 会員登録するときのフォーム
   ?>
   <div class="container">
   <?php include('header.php'); ?>
@@ -21,7 +23,7 @@
       <input type="text" name="name" style="width:200px" class="form-input"><br>
     </div>
     <div class="form-part">
-      <p class="form-p">メールアドレス(Gmailのみになります)</p>
+      <p class="form-p">メールアドレス</p>
       <input type="text" name="mail" style="width:200px" class="form-input"><br>
     </div>
     <div class="form-part">

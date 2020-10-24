@@ -14,6 +14,8 @@
   <div class="check-form">
 <?php  
 
+// 会員登録するときのフォームチェック
+
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $post1 = $_POST['post1'];
@@ -117,6 +119,7 @@ print '<p class="check-p">生まれ年</p>';
 print '<p class="check-p">'.$barth.'年</p>';
 
 
+// 会員登録完了する時に必要な物をhidden等で渡す処理
 if($name === '' || preg_match('/\A[\w\-\.]+\@[\w\-\.]+\.([a-z]+)\z/',$mail) === 0 || preg_match('/\A[0-9]+\z/',$post1) === 0 || preg_match('/\A[0-9]+\z/',$post2) === 0 || $addres === '' || preg_match('/\A\d{2,5}-?\d{2,5}-?\d{4,5}\z/',$tel) === 0)
 {
   print '<form>';

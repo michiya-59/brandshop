@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+
+<!-- お問い合わせフォーム -->
   <div class="container">
     <?php include('header.php'); 
     $date = new DateTime('now');
@@ -26,7 +28,7 @@
       <input type="text"  name="name" class="contact-input">
       <p class="contact-part">電話番号(必須)</p>
       <input type="text"  name="tel" class="contact-input">
-      <p class="contact-part">メールアドレス(<span class="contact-part" style="color:red">Gmailのみ</span>)</p>
+      <p class="contact-part">メールアドレス</p>
       <input type="text"  name="mail" class="contact-input">
       <p class="contact-part">件名(必須)</p>
       <input type="text"  name="subject" class="contact-input">

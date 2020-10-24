@@ -4,6 +4,7 @@ $gucci = 'GUCCI';
 $vuitton = 'LOUISVUITTON';
 $loewe = 'LOEWE';
 $spade = 'ketaspade';
+$bvlgari = 'BVLGARI';
 
 $wallet = 'long_wallet';
 $wallet2 = 'two_folded_wallet';
@@ -25,10 +26,10 @@ $totebag = 'totebag';
           <a href="shop_about.php" class="nav-a"><p class="nav-contents">ABOUT</p></a>
           <a href="shop_contact.php" class="nav-a"><p class="nav-contents">CONTACT</p></a>
           <a href="member_login.php" class="nav-a"><p class="nav-contents">LOGIN</p></a>
-          <a href="staff_login.php" class="nav-a"><p class="nav-contents">STAFF</p></a>
+          <!-- カテゴリーのドロップダウンする機能 -->
           <div class="dropdown">
             <button class="dropdown-btn" id="dropdown-btn" onfocus="this.blur();">
-              <p class="nav-contents">SERCH</p>
+              <p class="nav-contents2">SERCH</p>
             </button>
             <div class="dropdown-body">
               <button class="category-item" id="category-item">
@@ -52,17 +53,21 @@ $totebag = 'totebag';
                   <li><a href="vuitton.php?brand=<?php print $vuitton ?>">Louis Vuitton</a></li>
                   <li><a href="loewe.php?brand=<?php print $loewe ?>">LOEWE</a></li>
                   <li><a href="spade.php?brand=<?php print $spade ?>">kate spade</a></li>
+                  <li><a href="spade.php?brand=<?php print $bvlgari ?>">BVLGARI</a></li>
                 </ul>
               </div>
             </div>
           </div>
+           <!-- カテゴリーのドロップダウンする機能終了-->
+          <a href="./staff/staff_login.php" class="nav-a"><p class="nav-contents">STAFF</p></a>
+
         </div>
         <a href="shop_cartlook.php"><i class="fas fa-shopping-cart mr-3" style="color:gray;"></i></a>
       </div>
     </div>
 
     <div class="header-right">
-    <a href="rakuten.php?word=グッチ+長財布" class="rakuten"><i class="fa fa-registered "></i></a>
+    <a href="rakuten.php?word=グッチ%E3%80%80腕時計" class="rakuten"><i class="fa fa-registered "></i></a>
     <?php if(isset($_SESSION['member_login']) === true): ?>
         <a href="member_logout.php"><i class="fa fa-user mr-3 mt-3"></i></a>
         <?php else: ?>

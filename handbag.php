@@ -14,6 +14,8 @@
 
 <body>
 
+<!-- カテゴリーでハンドバッグで絞った時のコード -->
+
 <div class="container">
   <?php include('header.php'); ?>
   <div class="header-under">
@@ -43,6 +45,9 @@ $stmt->execute($data);
 
 
 $dbh = null;
+
+// 商品、写真や名前等をデーターベースから読み込みforeach で表示している
+
 
 print '<main>';
 print '<div class=product-list>';
