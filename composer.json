@@ -1,0 +1,13 @@
+{
+  "require":{
+    "sendgrid/sendgrid": "7.8.4",
+    "silex/silex": "^2.0.4",
+    "monolog/monolog": "^1.22",
+    "twig/twig": "^2.0",
+    "symfony/twig-bridge": "^3",
+    "abraham/twitteroauth": "0.7.2"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}
