@@ -15,6 +15,7 @@
 ●jQuery<br>
 ●PHP 7.4.8<br>
 ●MySQL 15.1<br>
+●Bootstrap
 ●SendGrid<br>
 ●Heroku<br>
 ●楽天API<br>
