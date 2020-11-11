@@ -11,8 +11,6 @@
 </head>
 <body>
 
-<!-- 会員登録完了画面 -->
-
 <div class="container">
 <?php include('header.php') ?>
   <div class="form-done">
@@ -42,8 +40,7 @@ $barth = htmlspecialchars($barth,ENT_QUOTES,'UTF-8');
 
 print '<p class="form-p">'.$name.'様</p>';
 print '<p class="form-p">会員登録が完了致しました</p>';
-
-// 会員登録完してくださったお客様の情報をデーターベースに入れる処理
+print '<p class="form-p">ログインしてください</p>';
 
 $dsn = 'mysql:dbname=heroku_b74bce80f45f87e;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 $user = 'bc9681657abe67'; 
@@ -83,13 +80,9 @@ $dbh = null;
 
 
 ?>
-<form action="index.php">
-  <input type="submit" value="商品画面へ" class="shop-home"> 
-  <input type="hidden" name="mail" value="<?php print $mail ?>">
-  <input type="hidden" name="pass1" value="<?php print $pass1 ?>">
-</form>
-
   </div>
+  <a href="member_login.php"><p class="entry-p">ログインへ</p></a>
+  <a href="index.php"><p class="entry-p">ショップへ</p></a>
   <?php include('footer.php'); ?>
 </div>
 </body>

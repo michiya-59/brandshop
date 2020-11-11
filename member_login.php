@@ -60,7 +60,7 @@
     <input type="password" name="pass" class="pass"><br>
     <input type="submit" value="ログイン" class="login">
     </form>
-    <p class="member-p">会員登録は<a href="member_entry.php" style="text-decoration:none">こちら</a></p>
+    <p class="member-p">会員登録は<a href="registration_mail_form.php" style="text-decoration:none">こちら</a></p>
   </div>
 <?php endif; ?>
   <?php include('footer.php') ?>

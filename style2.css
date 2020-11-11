@@ -59,8 +59,8 @@
   .nav-contents{
     font-size: 20px;
     margin: 0;
-    
   }
+  
   .nav-contents2{
     font-size: 20px;
     margin: 0;
@@ -106,10 +106,6 @@
   }
 
   /* member_login */
-  
-  /* member-entry */
-
-  /* member-entry */
 
 
   /* shop_product */
@@ -439,7 +435,130 @@
     width: 40px;
     height: 40px;
   }
-  
+  /* rakuten API */
+
+  /* 会員登録一連のファイル */
+  .mail-main{
+    font-size: 15px;
+  }
+
+  .mail-form-p{
+    margin-bottom: 11px;
+    font-size: 10px;
+  }
+
+  .name-form-p{
+    font-size: 10px;
+  }
+
+  .mail-btn{
+    font-size: 10px;
+    margin-bottom: 100px;
+  }
+
+  .main{
+    padding: 15px;
+  }
+  /* コメント機能 */
+  .coment-main{
+    font-size: 40px;
+  }
+  .content{
+    height: 142px;
+    margin: 30px auto;
+  }
+
+  .coment-img-p{
+    margin: 0;
+  }
+
+  .content-img{
+    width: 140px;
+  }
+
+  .coment-pro-detail{
+    padding: 25px 20px 0 20px;
+  }
+
+  .coment-pro-p{
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .coment-item{
+    width: 245px;
+  }
+
+  .member-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  .coment-delet-a{
+    font-size: 14px;
+  } 
+  .time-p{
+    font-size: 14px;
+  }
+  .member-coment{
+    font-size: 13px;
+  }
+  .buttons{
+    width: 60%;
+  }
+  .comentbtn{
+    font-size: 15px;
+  }
+  .index-btn {
+    font-size: 16px;
+  }
+
+  .related-item{
+    width: 100%;
+    justify-content:space-between;
+  }
+  .related-name{
+    margin-top: 60px;
+    font-size: 35px;
+  }
+  .related-item-part{
+    width: 33%;
+  }
+
+  .related-coment-img{
+    width: 105px;
+  }
+
+  .coment{
+    padding-bottom:0px;
+    padding: 15px 0;
+  }
+
+  .coment-p{
+    font-size: 15px;
+    margin: 0px;
+  }
+  .coment-question{
+    width: 100%;
+    padding:10px 0 10px 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .not-coment{
+    font-size: 14px;
+  }
+  .coment-output{
+    width: 104px;
+    height: 22px;
+  }
+  .coment-value{
+    font-size: 11px;
+    height: 20px;
+  }
+
+  .content-image{
+    width:105px;
+  }
 }
 
 @media(min-width:320px) and (max-width:355.999px){
@@ -482,6 +601,17 @@
 
   .next-btns{
     margin-right: 4px;
+  }
+  .coment-pro-detail{
+    padding:23px 5px 0px 8px;
+  }
+  .coment-pro-p{
+    font-size: 15px;
+    line-height: 10px;
+  }
+
+  .related-coment-img{
+    width: 90px;
   }
 }
 
@@ -537,7 +667,7 @@
     width: 309px;
   }
   #slide_show{
-    width: 100%;
+    width:100%;
     overflow: hidden;
     position: relative;
     right: 19px;
@@ -641,6 +771,24 @@
   .finish-product-part{
     line-height: 30px;
   }
+  #slide_show{
+    width: 100%;
+    right: 15px;
+  }
+  .coment-pro-p{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .index-btn{
+    font-size: 25px;
+  }
+  .comentbtn{
+    font-size: 25px;
+  }
+  .related-coment-img{
+    width: 210px;
+  }
+
 }
 
 @media(min-width:992px) and (max-width:1199.999px){
@@ -656,6 +804,11 @@
 
   .finish-product-part{
     line-height: 30px;
+  }
+
+  #slide_show{
+    width: 76%;
+    right: 15px;
   }
 }
 

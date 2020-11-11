@@ -431,7 +431,37 @@ header {
   background: white;
   border-radius: 5px;
   font-size: 20px;
-  padding: 2px 40px
+  padding: 2px 40px;
+}
+
+.mail-main{
+  margin: 50px 0 50px 0;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.mail-btn{
+  border-radius: 5px;
+  border: none;
+  padding: 8px 39px;
+  background: darkgray;
+  margin-bottom: 200px;
+}
+
+.main{
+  margin: 0 auto;
+  background: lightgray;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.member-entry{
+  margin: 50px 0;
+}
+
+.entry-p{
+  font-weight: bold;
+  font-size: 20px;
 }
 /* ログインフォーム終了 */
 
@@ -761,18 +791,19 @@ text-decoration: none;
 
 .product-cart-p{
   border-radius: 10px;
-  background: black;
+  background: darkgray;
   color: white;
   padding: 20px 0;
-  width: 50%;
-  margin: 0 auto;
+  width: 25%;
+  margin: 50px auto 0 auto;
   margin-bottom: 20px;
 }
 
 .product-detail-btn{
   background: darkgray;
-  padding: 20px 120px;
+  padding: 20px 0px;
   margin: 50px 0 60px 0;
+  width: 25%;
   border: none;
   color: white;
   border-radius: 10px;
@@ -966,9 +997,9 @@ text-decoration: none;
   color: black;
   margin-right: 15px;
 }
-.next:hover{
+.next-btns:hover{
   text-decoration: none;
-  color-btns: black;
+  color: black;
 }
 
 .home-btn{
@@ -1011,5 +1042,149 @@ text-decoration: none;
 
 .rakuten-footer-img{
   width: 390px;
+}
+
+/* コメント */
+.content{
+  border-bottom: 1px solid gray;
+  display: flex;
+  width: 70%;
+  margin: 70px auto;
+  border-top: 1px solid gray;
+  height: 202px;
+}
+
+.content-img{
+  width: 200px;
+}
+.content-image{
+  width: 200px;
+}
+
+
+
+.coment-pro-detail{
+  padding: 30px 20px;
+}
+
+.coment-main{
+  font-size: 60px;
+  font-weight: 500;
+  font-family: serif;
+  margin: 20px 0;
+}
+
+.coment-pro-p{
+  font-size: 25px;
+  line-height: 50px;
+  font-family: monospace;
+  margin: 0;
+}
+
+.coment-p{
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.related-name{
+  font-size: 60px;
+  font-weight: 500;
+  font-family: serif;
+  margin: 120px 0 10px 0;
+}
+
+.related-item{
+  display: flex;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.related-item-part{
+  width: 33%;
+}
+.related-coment-img{
+  width: 200px;
+}
+
+.coment-p{
+  font-size: 20px;
+  margin: 50px;
+}
+
+.coment-item{
+  width: 600px;
+  margin: 10px auto;
+  background: lightgray;
+  text-align: left;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.member-name{
+  padding-bottom: 14px;
+  border-bottom: 1px solid gray;
+}
+
+.member-coment{
+  margin: 0;
+}
+
+.index-btn{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: serif;
+  margin: 30px 0 0 0;
+}
+
+.comentbtn{
+  font-size: 19px;
+  font-weight: bold;
+  font-family: serif;
+  margin: 30px 0 0 0;
+}
+
+.buttons{
+  display: flex;
+  width: 32%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+
+.not-coment{
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.coment{
+  width: 70%;
+  margin: 0 auto;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+
+.product_coment:hover{
+  color: white;
+}
+
+.delet-btn{
+  display: flex;
+}
+
+.time-p{
+  margin-left: auto;
+  margin-bottom: 0;
+}
+.coment-question{
+  width: 25%;
+  background: darkgray;
+  color: white;
+  padding: 20px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 

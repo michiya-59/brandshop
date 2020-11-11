@@ -13,11 +13,11 @@
 session_start();
 session_regenerate_id(true);
 
-print '<div class="container>';
-
-include('header.php')
 
 try{
+  print '<div class="container>';
+  
+  include('header.php');
 $member_mail = $_POST['mail'];
 $member_pass = $_POST['pass'];
 
@@ -56,8 +56,8 @@ else
 }
 
 $dbh = null;
-}
 print '</div>';
+}
 
 catch(Exception $e)
 {

@@ -102,6 +102,7 @@ catch(Exception $e)
     <p class="product-detail-p">状態：<?php print  $product_condetion; ?></p>  
     <p class="product-detail-p">商品説明：<?php print  $product_detail; ?></p>
   </div>  
+  <a href="shop_coment_out.php?productcode=<?php print $product_code; ?>" class="product_coment"><p class="coment-question">商品へ質問</p></a>
   <?php if($product_stock === '1'): ?>
     <a href="shop_cartin.php?productcode=<?php print $product_code;?>" class="cart-a"><p class="product-cart-p">カートに入れる</p></a>
     <form>
